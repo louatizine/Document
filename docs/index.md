@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# Marhba bik fi Documentation n8n
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Houni bash taaref kol chay 3la n8n, wa kifach tist3mlou fi automation mta3 workflows bsh t7a9e9 efficiency fil projects mta3ek.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [Introduction](introduction.md)
+- [Getting Started](getting-started.md)
+- [Installation](installation.md)
+- [First Workflow](first-workflow.md)
+- [Examples](examples.md)
+- [Resources](resources.md)

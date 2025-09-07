@@ -1,35 +1,9 @@
-This is some examples of content tabs.
+# Table of Nodes
 
-Generic Content
-=== "Plain text"
-
-This is some plain text
-=== "Unordered list"
-
-* First item
-* Second item
-* Third item
-=== "Ordered list"
-
-1. First item
-2. Second item
-3. Third item
-Code Blocks in Content Tabs
-=== "Python"
-
-```py
-def main():
-    print("Hello world!")
-
-if __name__ == "__main__":
-    main()
-```
-=== "JavaScript"
-
-```js
-function main() {
-    console.log("Hello world!");
-}
-
-main();
-```
+| Node Type       | Description                  |
+|-----------------|-----------------------------|
+| Start           | Initial Node                 |
+| HTTP Request    | Connect API                  |
+| Gmail           | Send Email                   |
+| Slack           | Send Slack Notification      |
+| Set             | Set Data                     |
