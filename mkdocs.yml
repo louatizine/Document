@@ -1,5 +1,6 @@
-site_name: "Documentation n8n - Tunisien"
-site_url: "http://localhost:8000"
+site_name: "Documentation n8n - Tunisian 🇹🇳"
+site_url: "https://username.github.io/repo-name/"
+use_directory_urls: true
 
 theme:
   name: material
@@ -12,7 +13,8 @@ theme:
   logo: 'assets/images/logo.png'
   favicon: 'assets/images/favicon.ico'
   features:
-    - navigation.top        # Top navigation only
+    - navigation.tabs          # enables top navbar tabs
+    - navigation.sections      # ensures sidebar & navbar sync
     - instant
     - content.code.copy
     - content.code.annotate
@@ -23,7 +25,7 @@ site_dir: site
 nav:
   - Accueil: index.md
   - Introduction: introduction.md
-  - Démarrage: getting-started.md
+  - Premiers pas: getting-started.md
   - Installation: installation.md
   - Premier Workflow: first-workflow.md
   - Exemples: examples.md

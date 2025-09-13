@@ -1,9 +1,8 @@
-# Bienvenue dans le cours n8n 
+# Bienvenue dans le cours n8n 🚀
 
-<div style="text-align:center;">
-    <img src="assets/images/logo.png" alt="n8n logo" width="200">
+<div align="center">
+  <img src="assets/images/logo.png" alt="n8n Logo" width="200">
 </div>
-<hr>
 
 ---
 
@@ -42,8 +41,8 @@ Un guide **simple et pratique** pour débuter avec **l’automatisation de workf
 Ensuite, installez n8n en suivant [Installation](installation.md).  
 
 <div align="center">
-  <a href="docs/introduction.md" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/➡️%20Commencer%20le%20cours-blue?style=for-the-badge" alt="Start">
+  <a href="introduction.md" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/➡️%20Commencer%20le%20cours-blue?style=for-the-badge" alt="Commencer">
   </a>
 </div>
 
