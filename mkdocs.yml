@@ -1,19 +1,47 @@
-site_name: "Documentation n8n - Tunisian"
+site_name: "Documentation n8n - Tunisien"
 site_url: "http://localhost:8000"
+
 theme:
   name: material
   palette:
     primary: 'blue'
     accent: 'light blue'
-nav:
-  - Home: index.md
-  - Introduction: introduction.md
-  - Getting Started: getting-started.md
-  - Installation: installation.md
-  - First Workflow: first-workflow.md
-  - Examples: examples.md
-  - Table: table.md
-  - Resources: resources.md
+  font:
+    text: 'Roboto'
+    code: 'Fira Code'
+  logo: 'assets/images/logo.png'
+  favicon: 'assets/images/favicon.ico'
+  features:
+    - navigation.top        # Top navigation only
+    - instant
+    - content.code.copy
+    - content.code.annotate
 
 docs_dir: docs
 site_dir: site
+
+nav:
+  - Accueil: index.md
+  - Introduction: introduction.md
+  - Démarrage: getting-started.md
+  - Installation: installation.md
+  - Premier Workflow: first-workflow.md
+  - Exemples: examples.md
+  - Ressources: resources.md
+
+plugins:
+  - search
+  - macros
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - toc
+  - pymdownx.tilde
+
+extra_css:
+  - 'assets/css/custom.css'
+
+extra_javascript:
+  - 'assets/js/custom.js'

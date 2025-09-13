@@ -1,10 +1,61 @@
-# Marhba bik fi Documentation n8n
+# Bienvenue dans le cours n8n 
 
-Houni bash taaref kol chay 3la n8n, wa kifach tist3mlou fi automation mta3 workflows bsh t7a9e9 efficiency fil projects mta3ek.
+<div style="text-align:center;">
+    <img src="assets/images/logo.png" alt="n8n logo" width="200">
+</div>
+<hr>
 
-- [Introduction](introduction.md)
-- [Getting Started](getting-started.md)
-- [Installation](installation.md)
-- [First Workflow](first-workflow.md)
-- [Examples](examples.md)
-- [Resources](resources.md)
+---
+
+## 🌟 À propos
+
+Bienvenue dans la documentation **n8n - Tunisian Edition** 🇹🇳  
+Un guide **simple et pratique** pour débuter avec **l’automatisation de workflows** grâce à n8n.
+
+---
+
+## 📖 Structure du cours
+
+👉 Ce guide est organisé en 6 sections faciles à suivre :  
+
+1. 📝 [Introduction](introduction.md)  
+2. ⚡ [Getting Started](getting-started.md)  
+3. 🛠️ [Installation](installation.md)  
+4. 🎬 [First Workflow](first-workflow.md)  
+5. 🔄 [Examples](examples.md)  
+6. 📚 [Resources](resources.md)  
+
+---
+
+## ✨ Pourquoi apprendre n8n ?
+
+- 🚀 Gagner du temps en automatisant vos tâches.  
+- 🖥️ Construire des **workflows visuels** sans coder.  
+- 🔗 Connecter plus de **350 applications** facilement.  
+- 🔒 Garder le contrôle grâce au self-hosting open source.  
+
+---
+
+## 🚀 Débuter maintenant
+
+👉 Commencez par la section [Introduction](introduction.md) pour comprendre les bases.  
+Ensuite, installez n8n en suivant [Installation](installation.md).  
+
+<div align="center">
+  <a href="docs/introduction.md" style="text-decoration:none;">
+    <img src="https://img.shields.io/badge/➡️%20Commencer%20le%20cours-blue?style=for-the-badge" alt="Start">
+  </a>
+</div>
+
+
+---
+
+
+## 🌐 Ressources rapides
+
+- 🔗 [Site officiel](https://n8n.io)  
+- 📖 [Documentation complète](https://docs.n8n.io)  
+- 🐙 [Code source sur GitHub](https://github.com/n8n-io/n8n)  
+- 💬 [Communauté](https://community.n8n.io)  
+
+---

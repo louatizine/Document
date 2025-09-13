@@ -1,104 +1,112 @@
-# تثبيت n8n
+# Installation 🛠️
 
-
-n8n
-تنجم تركّبها بعدة طرق حسب شنوّة يناسبك:
-**npm، Docker، Windows/Mac، أو Gitpod**.  
-هاني باش نشرحلك كل طريقة خطوة بخطوة.
+Bienvenue dans la section **Installation** de **n8n - Tunisian Edition** 🇹🇳  
+Ici, nous allons voir comment installer et lancer **n8n** sur votre ordinateur ou serveur.  
+Pas besoin d’être un expert en DevOps, suivez simplement les étapes 👇
 
 ---
 
-## 1️⃣ التثبيت عن طريق npm (Node.js)
+## ✅ Prérequis techniques
 
-### الخطوة 1: تأكّد أنّ عندك Node.js
+Avant d’installer n8n, assurez-vous d’avoir :  
+
+- **Node.js** version **18 ou plus récente** → [Télécharger Node.js](https://nodejs.org)  
+- **npm** (fourni avec Node.js) ou **yarn** (optionnel)  
+- **Un terminal / invite de commandes** (Windows, macOS, Linux)  
+
+👉 Vérifiez vos versions :  
+
 ```bash
 node -v
 npm -v
 ```
-- يلزم Node.js version 18 ولا أكثر.
 
-### الخطوة 2: تثبيت n8n عالميّاً
+---
+
+### Installation via npm (recommandée pour débutants)
+
+La méthode la plus simple consiste à utiliser npm.
+
+#### Étape 1 : Installer n8n globalement
+
 ```bash
-npm install n8n -g
+npm install -g n8n
 ```
 
-### الخطوة 3: تشغيل n8n
+#### Étape 2 : Lancer n8n
+
 ```bash
 n8n
 ```
 
-- بعدها افتح المتصفح على:
-```
+👉 Cela démarre une instance accessible sur :  
 http://localhost:5678
-```
-- توا ready باش تعمل workflows.
 
 ---
 
-## 2️⃣ التثبيت عن طريق Docker
+### Installation via Docker (option avancée)
 
-### الخطوة 1: تأكّد أنّ Docker منصّب
-```bash
-docker -v
-```
+Si vous utilisez Docker, vous pouvez lancer n8n dans un conteneur.
 
-### الخطوة 2: تشغيل n8n في container
-```bash
-docker run -it --rm \
-  -p 5678:5678 \
-  n8nio/n8n
-```
-
-- `-p 5678:5678` → باش تربط port الداخلي بالمكانّي.  
-- افتح المتصفح على: `http://localhost:5678`  
-
-💡 تنجم تعمل **persistent data** باستعمال volume باش تحفظ workflows بعد restart:
+#### Étape 1 : Télécharger l’image officielle
 
 ```bash
-docker run -it --rm \
-  -p 5678:5678 \
-  -v ~/.n8n:/home/node/.n8n \
-  n8nio/n8n
+docker pull n8nio/n8n
 ```
+
+#### Étape 2 : Lancer le conteneur
+
+```bash
+docker run -it --rm   -p 5678:5678   -v ~/.n8n:/home/node/.n8n   n8nio/n8n
+```
+
+👉 Cela démarre n8n sur http://localhost:5678 avec persistance des données dans `~/.n8n`.
 
 ---
 
-## 3️⃣ التثبيت على Windows / Mac
+### Utiliser n8n.cloud (zéro installation)
 
-### Windows:
-- نزّل installer الرسمي من: [n8n.io](https://n8n.io/)  
-- ركّب البرنامج و اتبع التعليمات.  
-- شغّل التطبيق و افتح المتصفح على `http://localhost:5678`.
+Si vous ne voulez rien installer, utilisez la version hébergée :  
+👉 [https://n8n.cloud](https://n8n.cloud)
 
-### Mac:
-- استعمل Homebrew:
-```bash
-brew install n8n
-n8n
-```
-- افتح المتصفح على `http://localhost:5678`.
+**Avantages :**
+
+- Pas besoin de serveur ni de Docker  
+- Toujours à jour  
+- Hébergé et maintenu par l’équipe n8n  
 
 ---
 
-## 4️⃣ التثبيت على Gitpod (مناسب للتجربة السريعة)
+### 🔑 Astuce : conserver vos workflows
 
-### الخطوة 1: فتح workspace في Gitpod
-
-- استعمل repository متاعك: `https://gitpod.io/#<repo-url>`
-
-### الخطوة 2: تثبيت n8n
-```bash
-npm install n8n -g
-```
-
-### الخطوة 3: تشغيل n8n على Gitpod
-```bash
-n8n start --tunnel
-```
-
-- الأمر `--tunnel` يخلي n8n accessible من الإنترنت عبر Gitpod URL.  
-- Gitpod يعطيك **link مباشر** تفتح فيه n8n.
+Par défaut, si vous lancez n8n en mode simple (`n8n`), vos workflows sont stockés localement.  
+Avec Docker, assurez-vous d’utiliser un volume (`-v ~/.n8n:/home/node/.n8n`) pour ne rien perdre.
 
 ---
 
-✅ هكا تكون ركّبت n8n بالطرق الكلّ، و تولّي جاهز باش تعمل workflows، automation، وتستكشف جميع الميزات.
+### 🚨 Résolution de problèmes courants
+
+**Commande n8n introuvable ?**  
+→ Vérifiez que npm installe bien les paquets globalement (essayez `npx n8n`).
+
+**Port déjà utilisé (5678) ?**  
+→ Vérifiez si une autre instance n8n tourne déjà. Sinon lancez :  
+
+```bash
+n8n --port 5679
+```
+
+**Docker ne démarre pas ?**  
+→ Vérifiez que Docker Desktop ou votre service Docker est bien en cours d’exécution.
+
+---
+
+### 🎯 Prochaines étapes
+
+Bravo 🎉 vous avez installé n8n !  
+Passons maintenant à la pratique avec votre **Premier Workflow** 👇
+
+---
+
+👉 Cette page est prête pour **`installation.md`**.  
+Elle est **détaillée pour débutants**, avec explications, commandes, astuces et dépannage.
