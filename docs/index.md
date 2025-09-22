@@ -1,3 +1,4 @@
+---
 icon: material/home
 ---
 
@@ -5,18 +6,10 @@ icon: material/home
 
 Bienvenue ! Cette doc vous accompagne pas à pas pour créer vos premières automatisations avec n8n, sans connaissances préalables.
 
-<div class="hero fade-section">
-  <div>
-    <h1>Automatisez sans coder</h1>
-    <p class="lead">Créez des workflows visuels pour connecter vos apps (Gmail, Slack, Google Sheets, API…). Commencez en 10 minutes.</p>
-    <p class="cta">
-      [:material-rocket-launch: Démarrer le parcours](introduction.md){ .btn .btn-primary }
-      [:material-download: Installer n8n](installation.md){ .btn .btn-ghost }
-    </p>
-  </div>
+Automatisez sans coder — créez des workflows visuels pour connecter vos apps (Gmail, Slack, Google Sheets, API…). Commencez en 10 minutes.
 
-  
-</div>
+[:material-rocket-launch: Démarrer le parcours](introduction.md){ .btn .btn-primary }
+[:material-download: Installer n8n](installation.md){ .btn .btn-ghost }
 
 ---
 
@@ -32,28 +25,10 @@ Astuce: vous pouvez suivre ces étapes dans l’ordre et tester au fur et à mes
 
 ## 2. Ce que vous allez apprendre
 
-<div class="features">
-  <div class="card fade-section">
-    <div class="icon">:material-lightning-bolt:</div>
-    <h3>Automatiser en quelques clics</h3>
-    <p>Reliez des services, déclenchez des actions et gagnez du temps.</p>
-  </div>
-  <div class="card fade-section">
-    <div class="icon">:material-chart-timeline-variant:</div>
-    <h3>Workflows visuels</h3>
-    <p>Glissez-déposez des nœuds et testez vos flux en direct.</p>
-  </div>
-  <div class="card fade-section">
-    <div class="icon">:material-source-branch:</div>
-    <h3>Intégrations</h3>
-    <p>350+ intégrations prêtes à l’emploi (Google, Slack, APIs, etc.).</p>
-  </div>
-  <div class="card fade-section">
-    <div class="icon">:material-shield-lock:</div>
-    <h3>Open source</h3>
-    <p>Hébergez localement et gardez le contrôle de vos données.</p>
-  </div>
-</div>
+- :material-lightning-bolt: **Automatiser en quelques clics** — reliez des services, déclenchez des actions et gagnez du temps.
+- :material-chart-timeline-variant: **Workflows visuels** — glissez-déposez des nœuds et testez vos flux en direct.
+- :material-source-branch: **Intégrations** — 350+ intégrations prêtes à l’emploi (Google, Slack, APIs, etc.).
+- :material-shield-lock: **Open source** — hébergez localement et gardez le contrôle de vos données.
 
 ---
 
