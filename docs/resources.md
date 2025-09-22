@@ -1,3 +1,7 @@
+---
+icon: material/link-variant
+---
+
 # 📚 Resources pour n8n
 
 Bienvenue dans la section **Resources** de **n8n - Tunisian Edition** 🇹🇳  

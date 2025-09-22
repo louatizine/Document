@@ -1,3 +1,7 @@
+---
+icon: material/book-open-variant
+---
+
 # Introduction à n8n 🚀
 
 Bienvenue dans la documentation **n8n - Tunisian Edition** 🇹🇳  

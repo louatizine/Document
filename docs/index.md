@@ -1,60 +1,76 @@
-# Bienvenue dans le cours n8n 🚀
+icon: material/home
+---
 
-<div align="center">
-  <img src="assets/images/logo.png" alt="n8n Logo" width="200">
+# n8n — Guide Débutant 🇹🇳
+
+Bienvenue ! Cette doc vous accompagne pas à pas pour créer vos premières automatisations avec n8n, sans connaissances préalables.
+
+<div class="hero fade-section">
+  <div>
+    <h1>Automatisez sans coder</h1>
+    <p class="lead">Créez des workflows visuels pour connecter vos apps (Gmail, Slack, Google Sheets, API…). Commencez en 10 minutes.</p>
+    <p class="cta">
+      [:material-rocket-launch: Démarrer le parcours](introduction.md){ .btn .btn-primary }
+      [:material-download: Installer n8n](installation.md){ .btn .btn-ghost }
+    </p>
+  </div>
+
+  
 </div>
 
 ---
 
-## 🌟 À propos
+## 1. Votre premier parcours en 3 étapes
 
-Bienvenue dans la documentation **n8n - Tunisian Edition** 🇹🇳  
-Un guide **simple et pratique** pour débuter avec **l’automatisation de workflows** grâce à n8n.
+1) [:material-book-open-variant: Introduction](introduction.md) — Comprendre les concepts (nœud, workflow, déclencheur)  
+2) [:material-download: Installation](installation.md) — Choisir entre npm, Docker ou cloud  
+3) [:material-rocket-launch: Premier workflow](first-workflow.md) — Un exemple guidé pas à pas
 
----
-
-## 📖 Structure du cours
-
-👉 Ce guide est organisé en 6 sections faciles à suivre :  
-
-1. 📝 [Introduction](introduction.md)  
-2. ⚡ [Getting Started](getting-started.md)  
-3. 🛠️ [Installation](installation.md)  
-4. 🎬 [First Workflow](first-workflow.md)  
-5. 🔄 [Examples](examples.md)  
-6. 📚 [Resources](resources.md)  
+Astuce: vous pouvez suivre ces étapes dans l’ordre et tester au fur et à mesure.
 
 ---
 
-## ✨ Pourquoi apprendre n8n ?
+## 2. Ce que vous allez apprendre
 
-- 🚀 Gagner du temps en automatisant vos tâches.  
-- 🖥️ Construire des **workflows visuels** sans coder.  
-- 🔗 Connecter plus de **350 applications** facilement.  
-- 🔒 Garder le contrôle grâce au self-hosting open source.  
-
----
-
-## 🚀 Débuter maintenant
-
-👉 Commencez par la section [Introduction](introduction.md) pour comprendre les bases.  
-Ensuite, installez n8n en suivant [Installation](installation.md).  
-
-<div align="center">
-  <a href="introduction.md" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/➡️%20Commencer%20le%20cours-blue?style=for-the-badge" alt="Commencer">
-  </a>
+<div class="features">
+  <div class="card fade-section">
+    <div class="icon">:material-lightning-bolt:</div>
+    <h3>Automatiser en quelques clics</h3>
+    <p>Reliez des services, déclenchez des actions et gagnez du temps.</p>
+  </div>
+  <div class="card fade-section">
+    <div class="icon">:material-chart-timeline-variant:</div>
+    <h3>Workflows visuels</h3>
+    <p>Glissez-déposez des nœuds et testez vos flux en direct.</p>
+  </div>
+  <div class="card fade-section">
+    <div class="icon">:material-source-branch:</div>
+    <h3>Intégrations</h3>
+    <p>350+ intégrations prêtes à l’emploi (Google, Slack, APIs, etc.).</p>
+  </div>
+  <div class="card fade-section">
+    <div class="icon">:material-shield-lock:</div>
+    <h3>Open source</h3>
+    <p>Hébergez localement et gardez le contrôle de vos données.</p>
+  </div>
 </div>
 
+---
+
+## 3. Exemples prêts à tester
+
+- [:material-email: Email → Slack](examples.md) — Notifiez votre équipe à chaque nouvel email  
+- [:material-cloud-download: FTP → Google Drive](examples.md) — Sauvegardez automatiquement des fichiers  
+- [:material-file-chart: API → Google Sheets](examples.md) — Créez un tableau de bord automatisé
+
+Explorez encore plus d’idées dans [Exemples](examples.md).
 
 ---
 
+## 4. Besoin d’aide ?
 
-## 🌐 Ressources rapides
-
-- 🔗 [Site officiel](https://n8n.io)  
-- 📖 [Documentation complète](https://docs.n8n.io)  
-- 🐙 [Code source sur GitHub](https://github.com/n8n-io/n8n)  
-- 💬 [Communauté](https://community.n8n.io)  
+- [:material-lifebuoy: Documentation officielle](https://docs.n8n.io)  
+- [:material-github: Code source](https://github.com/n8n-io/n8n)  
+- [:material-account-group: Communauté](https://community.n8n.io)
 
 ---

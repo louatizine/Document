@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Smooth scroll for internal links
+  // Smooth scroll for internal anchors (ignore external and nav tabs)
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      if(target) {
+      const href = this.getAttribute("href");
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
         const topPos = target.getBoundingClientRect().top + window.pageYOffset - 80;
         window.scrollTo({ top: topPos, behavior: "smooth" });
-        history.pushState(null,null,this.getAttribute("href"));
+        history.pushState(null, null, href);
       }
     });
   });
@@ -24,29 +25,14 @@ document.addEventListener("DOMContentLoaded", function() {
   }, { threshold: 0.1, rootMargin: "0px 0px -100px 0px" });
   faders.forEach(f => observer.observe(f));
 
-  // Copy code functionality
-  document.querySelectorAll("pre").forEach(block => {
-    const wrapper = document.createElement("div");
-    wrapper.className = "code-block";
-    block.parentNode.insertBefore(wrapper, block);
-    wrapper.appendChild(block);
-
-    const copyButton = document.createElement("button");
-    copyButton.className = "copy-button";
-    copyButton.innerHTML = 'Copier';
-    wrapper.appendChild(copyButton);
-
-    copyButton.addEventListener("click", () => {
-      const code = block.querySelector("code")?.innerText;
-      if(!code) return;
-      navigator.clipboard.writeText(code).then(() => {
-        copyButton.innerHTML = 'Copié!';
-        copyButton.classList.add("copied");
-        setTimeout(() => {
-          copyButton.innerHTML = 'Copier';
-          copyButton.classList.remove("copied");
-        }, 2000);
-      });
-    });
+  // Back to top button
+  const btn = document.createElement("button");
+  btn.id = "backToTop";
+  btn.title = "Haut de page";
+  btn.innerHTML = "↑";
+  document.body.appendChild(btn);
+  window.addEventListener("scroll", () => {
+    btn.style.display = window.scrollY > 300 ? "flex" : "none";
   });
+  btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 });

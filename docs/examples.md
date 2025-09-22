@@ -1,3 +1,7 @@
+---
+icon: material/lightbulb-on
+---
+
 # 🔄 Exemples de Workflows n8n
 
 Bienvenue dans la section **Examples** de **n8n - Tunisian Edition** 🇹🇳  

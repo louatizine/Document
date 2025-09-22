@@ -1,23 +1,38 @@
 site_name: "Documentation n8n - Tunisian 🇹🇳"
-site_url: "https://username.github.io/repo-name/"
+site_url: "https://louatizine.github.io/Document/"
 use_directory_urls: true
 
 theme:
   name: material
   palette:
-    primary: 'blue'
-    accent: 'light blue'
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Basculer en mode sombre
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Basculer en mode clair
   font:
-    text: 'Roboto'
-    code: 'Fira Code'
-  logo: 'assets/images/logo.png'
-  favicon: 'assets/images/favicon.ico'
+    text: Roboto
+    code: Fira Code
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
   features:
-    - navigation.tabs          # enables top navbar tabs
-    - navigation.sections      # ensures sidebar & navbar sync
-    - instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - navigation.top
+    - search.suggest
+    - search.highlight
     - content.code.copy
     - content.code.annotate
+    - content.tabs.link
 
 docs_dir: docs
 site_dir: site
@@ -39,8 +54,14 @@ markdown_extensions:
   - admonition
   - codehilite
   - pymdownx.superfences
-  - toc
+  - toc:
+      permalink: true
   - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - 'assets/css/custom.css'

@@ -1,3 +1,7 @@
+---
+icon: material/rocket-launch
+---
+
 # Getting Started ⚡
 
 Bienvenue dans la section **Getting Started** de **n8n - Tunisian Edition** 🇹🇳  

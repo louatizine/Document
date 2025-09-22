@@ -1,3 +1,7 @@
+---
+icon: material/download
+---
+
 # Installation 🛠️
 
 Bienvenue dans la section **Installation** de **n8n - Tunisian Edition** 🇹🇳  

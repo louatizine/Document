@@ -1,3 +1,6 @@
+icon: material/source-branch
+---
+
 # 🎬 Premier Workflow avec n8n
 
 Bienvenue dans la section **First Workflow** de **n8n - Tunisian Edition** 🇹🇳  
